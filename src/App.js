@@ -1,12 +1,15 @@
-import './App.css';
-import Header from './myComponents/Header';
-import Navbar from './myComponents/Navbar.js'
+import "./App.css";
+import FirstPage from "./myComponents/FirstPage";
+import SecondPage from "./myComponents/SecondPage";
+import ThirdPage from "./myComponents/ThirdPage";
+
 function App() {
   return (
-    <div>
-      <Header title="SMR" />
-      <Navbar />
-    </div>
+    <>
+      <FirstPage />
+      <SecondPage />
+      <ThirdPage />
+    </>
   );
 }
 export default App;
