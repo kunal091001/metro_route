@@ -23,7 +23,7 @@ export default function firstpage() {
           </h1>
         </div>
         <div className=" z-10  w-fit absolute  items-center bottom-0 lg:opacity-25 md:opacity-25   ">
-          {/* <MetroAnimation /> */}
+          <MetroAnimation />
         </div>
       </div>
     </>
