@@ -1,7 +1,7 @@
 import "./App.css";
-import FirstPage from "./myComponents/FirstPage";
-import SecondPage from "./myComponents/SecondPage";
-import ThirdPage from "./myComponents/ThirdPage";
+import FirstPage from "../src/myComponents/homePage/firstSection/FirstPage";
+import SecondPage from "../src/myComponents/homePage/secondSection/SecondPage";
+import ThirdPage from "../src/myComponents/homePage/thirdSection/ThirdPage";
 
 function App() {
   return (
