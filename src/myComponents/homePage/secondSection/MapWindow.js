@@ -27,6 +27,7 @@ export default function MapWindow() {
         <img
           src={mapImage}
           style={{ height: height, width: width }}
+          className=" rounded-2xl"
           onMouseEnter={(e) => {
             // update image size and turn-on magnifier
             const elem = e.currentTarget;

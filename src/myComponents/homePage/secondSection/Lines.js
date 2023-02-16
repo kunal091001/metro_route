@@ -36,9 +36,13 @@ function Lines() {
                 event.target.style.color = "#000000";
               }}
             >
-              <img className=" h-14 w-14 my-2   " src={Train} alt="TRAIN" />
+              <img
+                className=" h-14 w-14 my-2  pointer-events-none "
+                src={Train}
+                alt="TRAIN"
+              />
 
-              <div className="  text-center ">
+              <div className="  text-center pointer-events-none ">
                 <p className=" font-bold text-xs  ">{element.name}</p>
                 <p className=" text-xs ">{element.line_color}</p>
               </div>
