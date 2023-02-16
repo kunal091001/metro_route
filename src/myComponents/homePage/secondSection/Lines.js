@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useContext } from "react";
+import RouteContext from "../../Contexts/RouteContext";
 import Train from "../../../Assets/images/train.png";
 import MovingTrain from "../../lottieAnimations/animation2";
 
-const baseURL = "https://backend.delhimetrorail.com/api/v2/en/line_list";
-
 function Lines() {
-  const [metroLines, setmetroLines] = useState([]);
-
-  useEffect(() => {
-    getAnswer();
-  }, []);
-  const getAnswer = () => {
-    axios.get(`${baseURL}`).then((res) => {
-      setmetroLines(res.data);
-    });
-  };
+  const { metroLines, setmetroLines } = useContext(RouteContext);
 
   console.log(metroLines);
   return (

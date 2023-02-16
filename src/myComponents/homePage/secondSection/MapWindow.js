@@ -1,14 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 import mapImage from "../../../Assets/images/Network_map.jpg";
 
 export default function MapWindow() {
-  var src;
   var width;
   var height;
   var magnifierHeight = 200;
   var magnifieWidth = 200;
-  var zoomLevel = 1.5;
+  var zoomLevel = 2.5;
 
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
