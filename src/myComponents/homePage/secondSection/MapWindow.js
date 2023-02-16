@@ -6,9 +6,9 @@ export default function MapWindow() {
   var src;
   var width;
   var height;
-  var magnifierHeight = 100;
-  var magnifieWidth = 100;
-  var zoomLevel = 2.5;
+  var magnifierHeight = 200;
+  var magnifieWidth = 200;
+  var zoomLevel = 1.5;
 
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
@@ -66,10 +66,11 @@ export default function MapWindow() {
             left: `${x - magnifieWidth / 2}px`,
             opacity: "1", // reduce opacity so you can verify position
             border: "1px solid lightgray",
+            borderRadius: "50%",
             backgroundColor: "white",
             backgroundImage: `url('${mapImage}')`,
             backgroundRepeat: "no-repeat",
-
+            overflow: "hidden",
             //calculate zoomed image size
             backgroundSize: `${imgWidth * zoomLevel}px ${
               imgHeight * zoomLevel
