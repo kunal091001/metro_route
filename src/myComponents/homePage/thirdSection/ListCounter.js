@@ -6,10 +6,10 @@ export default function ListCounter() {
   const [num2, setNum2] = useState(286);
 
   return (
-    <div className="flex  flex-row bg-carbon rounded-lg w-fit h-fit p-2">
-      <div className="flex flex-col text-center p-2  border-r-4 rounded border-whiteColor ">
+    <div className="flex  flex-row bg-gray-300 rounded-lg w-fit h-fit p-2">
+      <div className="flex flex-col text-center p-2  border-r-4 rounded border-white ">
         <span
-          className=" md:text-3xl text-xl   text-skyColor  font-semibold"
+          className=" md:text-3xl text-xl   text-sky-500 font-semibold"
           onMouseEnter={() => {
             let count = 0;
             setInterval(() => {
@@ -26,12 +26,12 @@ export default function ListCounter() {
           Total Network Length
           <br />
           <i>(km)</i>
-          <i className="text-redColor font-bold"> *</i>
+          <i className="text-red-500 font-bold"> *</i>
         </span>
       </div>
-      <div className="flex flex-col text-center p-2 border-r-4 rounded border-whiteColor">
+      <div className="flex flex-col text-center p-2 border-r-4 rounded border-white">
         <span
-          className=" md:text-3xl text-xl text-skyColor   font-semibold"
+          className=" md:text-3xl text-xl text-sky-500   font-semibold"
           onMouseEnter={() => {
             let count = 0;
             setInterval(() => {
@@ -45,12 +45,12 @@ export default function ListCounter() {
           {num1}
         </span>
         <span className="mt-2 text-xs ">
-          Total no of Lines <i className="text-redColor font-bold">*</i>
+          Total no of Lines <i className="text-red-500 font-bold">*</i>
         </span>
       </div>
       <div className="flex flex-col p-2 text-center ">
         <span
-          className="md:text-3xl text-xl text-skyColor rounded-xl  font-semibold "
+          className="md:text-3xl text-xl text-sky-500 rounded-xl  font-semibold "
           onMouseEnter={() => {
             let count = 0;
             setInterval(() => {
@@ -64,7 +64,7 @@ export default function ListCounter() {
           {num2}
         </span>
         <span className="mt-2 text-xs ">
-          Total no of Stations <i className="text-redColor  font-bold">*</i>
+          Total no of Stations <i className="text-red-500 font-bold">*</i>
         </span>
       </div>
     </div>

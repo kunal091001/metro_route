@@ -5,16 +5,16 @@ import mapImage from "../../../Assets/images/Network_map.jpg";
 export default function MapWindow() {
   var width;
   var height;
-  var magnifierHeight = 200;
-  var magnifieWidth = 200;
-  var zoomLevel = 2.5;
+  var magnifierHeight = 250;
+  var magnifieWidth = 250;
+  var zoomLevel = 3;
 
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
   const [showMagnifier, setShowMagnifier] = useState(false);
 
   return (
-    <div className="bg-carbon rounded-2xl border  m-4">
+    <div className="bg-gray-100 rounded-2xl border-2 border-black  m-4">
       <h1 className="text-3xl text-black text-center">METRO MAP</h1>
       <div
         style={{
@@ -24,6 +24,7 @@ export default function MapWindow() {
         }}
       >
         <img
+          id="mapnetwork"
           src={mapImage}
           style={{ height: height, width: width }}
           className=" rounded-2xl"

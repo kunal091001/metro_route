@@ -3,12 +3,12 @@ import MetroLogo from "../../../Assets/images/metroLogo.jpg";
 
 export default function footer() {
   return (
-    <footer className="p-4 bg-carbon sm:p-6 ">
+    <footer className="p-4 bg-gray-500 sm:p-6 ">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0 flex items-center">
           <img
             src={MetroLogo}
-            className="h-10 mr-3 cursor-pointer bg-whiteColor rounded-full border-whiteColor border-4"
+            className="h-10 mr-3 cursor-pointer bg-white rounded-full border-white border-4"
             alt="SMR Logo"
           />
           <span className="self-center text-3xl text-black font-semibold whitespace-nowrap cursor-pointer ">
@@ -75,7 +75,7 @@ export default function footer() {
           </div>
         </div>
       </div>
-      <hr className="my-6 border-whiteColor sm:mx-auto  lg:my-8" />
+      <hr className="my-6 border-white sm:mx-auto  lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-black sm:text-center ">
           © 2023{" "}
