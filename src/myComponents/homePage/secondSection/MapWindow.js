@@ -1,5 +1,4 @@
 import { useState } from "react";
-import LazyLoad from "react-lazy-load";
 import mapImage from "../../../Assets/images/Network_map.jpg";
 
 export default function MapWindow({
@@ -22,37 +21,35 @@ export default function MapWindow({
           width: "100%",
         }}
       >
-        <LazyLoad>
-          <img
-            id="mapnetwork"
-            src={src}
-            style={{ height: "100%", width: "100%" }}
-            className=" rounded-2xl"
-            onMouseEnter={(e) => {
-              // update image size and turn-on magnifier
-              const elem = e.currentTarget;
-              const { width, height } = elem.getBoundingClientRect();
-              setSize([width, height]);
-              setShowMagnifier(true);
-            }}
-            onMouseMove={(e) => {
-              // update cursor position
-              const elem = e.currentTarget;
-              const { top, left } = elem.getBoundingClientRect();
+        <img
+          id="mapnetwork"
+          src={src}
+          style={{ height: "100%", width: "100%" }}
+          className=" rounded-2xl"
+          onMouseEnter={(e) => {
+            // update image size and turn-on magnifier
+            const elem = e.currentTarget;
+            const { width, height } = elem.getBoundingClientRect();
+            setSize([width, height]);
+            setShowMagnifier(true);
+          }}
+          onMouseMove={(e) => {
+            // update cursor position
+            const elem = e.currentTarget;
+            const { top, left } = elem.getBoundingClientRect();
 
-              // calculate cursor position on the image
-              const x = e.pageX - left - window.pageXOffset;
-              const y = e.pageY - top - window.pageYOffset;
-              setXY([x, y]);
-            }}
-            onMouseLeave={() => {
-              // close magnifier
-              setShowMagnifier(false);
-            }}
-            alt={"img"}
-            loading={"lazy"}
-          />
-        </LazyLoad>
+            // calculate cursor position on the image
+            const x = e.pageX - left - window.pageXOffset;
+            const y = e.pageY - top - window.pageYOffset;
+            setXY([x, y]);
+          }}
+          onMouseLeave={() => {
+            // close magnifier
+            setShowMagnifier(false);
+          }}
+          alt={"img"}
+          loading={"lazy"}
+        />
 
         <div
           style={{
