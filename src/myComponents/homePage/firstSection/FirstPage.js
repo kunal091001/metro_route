@@ -9,14 +9,14 @@ export default function firstpage() {
       <Navbar />
       <div className="flex flex-col h-screen items-center ">
         <div>
-          <h1 className="md:text-9xl text-7xl sm:mt-14 mt-16   text-center font-bold text-transparent bg-clip-text bg-gradient-to-br from-black    to-sky-400">
+          <h1 className="md:text-9xl text-7xl sm:mt-14 mt-16   text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#00308F]  to-[#ed1c24]  to-[#9cafb7]">
             Find Your{" "}
-            <span className="font-extrabold  text-transparent bg-clip-text bg-gradient-to-bl from-black    to-sky-400">
+            <span className="font-extrabold  text-transparent bg-clip-text bg-gradient from-[#00308F]  to-[#ed1c24]  to-[#9cafb7]]">
               Route
             </span>{" "}
             <br />
             With{" "}
-            <span className="font-extrabold  text-transparent bg-clip-text bg-gradient-to-bl from-black    to-sky-400">
+            <span className="font-extrabold  text-transparent bg-clip-text bg-gradient from-[#00308F]  to-[#ed1c24]  to-[#9cafb7]">
               SMR
             </span>
           </h1>

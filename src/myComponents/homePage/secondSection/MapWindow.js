@@ -1,56 +1,58 @@
 import { useState } from "react";
-
+import LazyLoad from "react-lazy-load";
 import mapImage from "../../../Assets/images/Network_map.jpg";
 
-export default function MapWindow() {
-  var width;
-  var height;
-  var magnifierHeight = 250;
-  var magnifieWidth = 250;
-  var zoomLevel = 3;
-
+export default function MapWindow({
+  src = mapImage,
+  magnifierHeight = 250,
+  magnifieWidth = 250,
+  zoomLevel = 3,
+}) {
   const [[x, y], setXY] = useState([0, 0]);
   const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
   const [showMagnifier, setShowMagnifier] = useState(false);
 
   return (
-    <div className="bg-gray-100 rounded-2xl border-2 border-black  m-4">
-      <h1 className="text-3xl text-black text-center">METRO MAP</h1>
+    <div className="bg-[#9cafb7] rounded-2xl border-2 border-[#00308f]  m-4">
+      <h1 className="text-3xl text-white text-center font-bold">METRO MAP</h1>
       <div
         style={{
           position: "relative",
-          height: height,
-          width: width,
+          height: "100%",
+          width: "100%",
         }}
       >
-        <img
-          id="mapnetwork"
-          src={mapImage}
-          style={{ height: height, width: width }}
-          className=" rounded-2xl"
-          onMouseEnter={(e) => {
-            // update image size and turn-on magnifier
-            const elem = e.currentTarget;
-            const { width, height } = elem.getBoundingClientRect();
-            setSize([width, height]);
-            setShowMagnifier(true);
-          }}
-          onMouseMove={(e) => {
-            // update cursor position
-            const elem = e.currentTarget;
-            const { top, left } = elem.getBoundingClientRect();
+        <LazyLoad>
+          <img
+            id="mapnetwork"
+            src={src}
+            style={{ height: "100%", width: "100%" }}
+            className=" rounded-2xl"
+            onMouseEnter={(e) => {
+              // update image size and turn-on magnifier
+              const elem = e.currentTarget;
+              const { width, height } = elem.getBoundingClientRect();
+              setSize([width, height]);
+              setShowMagnifier(true);
+            }}
+            onMouseMove={(e) => {
+              // update cursor position
+              const elem = e.currentTarget;
+              const { top, left } = elem.getBoundingClientRect();
 
-            // calculate cursor position on the image
-            const x = e.pageX - left - window.pageXOffset;
-            const y = e.pageY - top - window.pageYOffset;
-            setXY([x, y]);
-          }}
-          onMouseLeave={() => {
-            // close magnifier
-            setShowMagnifier(false);
-          }}
-          alt={"img"}
-        />
+              // calculate cursor position on the image
+              const x = e.pageX - left - window.pageXOffset;
+              const y = e.pageY - top - window.pageYOffset;
+              setXY([x, y]);
+            }}
+            onMouseLeave={() => {
+              // close magnifier
+              setShowMagnifier(false);
+            }}
+            alt={"img"}
+            loading={"lazy"}
+          />
+        </LazyLoad>
 
         <div
           style={{
@@ -67,10 +69,10 @@ export default function MapWindow() {
             left: `${x - magnifieWidth / 2}px`,
             opacity: "1", // reduce opacity so you can verify position
             border: "1px solid lightgray",
-            borderRadius: "50%",
             backgroundColor: "white",
-            backgroundImage: `url('${mapImage}')`,
+            backgroundImage: `url('${src}')`,
             backgroundRepeat: "no-repeat",
+            borderRadius: "50%",
             overflow: "hidden",
             //calculate zoomed image size
             backgroundSize: `${imgWidth * zoomLevel}px ${

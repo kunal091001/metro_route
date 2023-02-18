@@ -6,10 +6,10 @@ export default function ListCounter() {
   const [num2, setNum2] = useState(286);
 
   return (
-    <div className="flex  flex-row bg-gray-300 rounded-lg w-fit h-fit p-2">
+    <div className="flex  flex-row bg-[#eaebed] rounded-lg w-fit h-fit p-2">
       <div className="flex flex-col text-center p-2  border-r-4 rounded border-white ">
         <span
-          className=" md:text-3xl text-xl   text-sky-500 font-semibold"
+          className=" md:text-3xl text-xl   text-[#00308F] font-semibold"
           onMouseEnter={() => {
             let count = 0;
             setInterval(() => {
@@ -31,7 +31,7 @@ export default function ListCounter() {
       </div>
       <div className="flex flex-col text-center p-2 border-r-4 rounded border-white">
         <span
-          className=" md:text-3xl text-xl text-sky-500   font-semibold"
+          className=" md:text-3xl text-xl text-[#00308F]   font-semibold"
           onMouseEnter={() => {
             let count = 0;
             setInterval(() => {
@@ -50,7 +50,7 @@ export default function ListCounter() {
       </div>
       <div className="flex flex-col p-2 text-center ">
         <span
-          className="md:text-3xl text-xl text-sky-500 rounded-xl  font-semibold "
+          className="md:text-3xl text-xl text-[#00308F] rounded-xl  font-semibold "
           onMouseEnter={() => {
             let count = 0;
             setInterval(() => {

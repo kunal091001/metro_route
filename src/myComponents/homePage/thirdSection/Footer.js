@@ -3,24 +3,24 @@ import MetroLogo from "../../../Assets/images/metroLogo.jpg";
 
 export default function footer() {
   return (
-    <footer className="p-4 bg-gray-500 sm:p-6 ">
+    <footer className="p-4 bg-[#00308F] sm:p-6 ">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0 flex items-center">
           <img
             src={MetroLogo}
-            className="h-10 mr-3 cursor-pointer bg-white rounded-full border-white border-4"
+            className="h-14 mr-3 cursor-pointer bg-white rounded-full border-white border-4"
             alt="SMR Logo"
           />
-          <span className="self-center text-3xl text-black font-semibold whitespace-nowrap cursor-pointer ">
+          <span className="self-center text-3xl text-white font-semibold whitespace-nowrap cursor-pointer ">
             SMR
           </span>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
               Resources
             </h2>
-            <ul className="text-black ">
+            <ul className="text-white ">
               <li className="mb-4">
                 <a href="#." className="hover:underline">
                   SMR
@@ -34,10 +34,10 @@ export default function footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
               Follow us
             </h2>
-            <ul className="text-black ">
+            <ul className="text-white ">
               <li className="mb-4">
                 <a
                   href="https://github.com/kunal091001"
@@ -57,10 +57,10 @@ export default function footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
               Legal
             </h2>
-            <ul className="text-black ">
+            <ul className="text-white ">
               <li className="mb-4">
                 <a href="#." className="hover:underline">
                   Privacy Policy
@@ -77,15 +77,15 @@ export default function footer() {
       </div>
       <hr className="my-6 border-white sm:mx-auto  lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-black sm:text-center ">
+        <span className="text-sm text-white sm:text-center ">
           © 2023{" "}
           <a href="https://flowbite.com/" className="hover:underline">
-            Flowbite™
+            SMR™
           </a>
           . All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <a href="#." className="text-black ">
+          <a href="#." className="text-white ">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -100,7 +100,7 @@ export default function footer() {
             </svg>
             <span className="sr-only">Facebook page</span>
           </a>
-          <a href="#." className="text-black  s">
+          <a href="#." className="text-white  s">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -115,7 +115,7 @@ export default function footer() {
             </svg>
             <span className="sr-only">Instagram page</span>
           </a>
-          <a href="#." className="text-black">
+          <a href="#." className="text-white">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -126,7 +126,7 @@ export default function footer() {
             </svg>
             <span className="sr-only">Twitter page</span>
           </a>
-          <a href="#." className="text-black">
+          <a href="#." className="text-white">
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -141,7 +141,7 @@ export default function footer() {
             </svg>
             <span className="sr-only">GitHub account</span>
           </a>
-          <a href="#." className="text-black">
+          <a href="#." className="text-white">
             <svg
               className="w-5 h-5"
               fill="currentColor"

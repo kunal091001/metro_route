@@ -34,9 +34,13 @@ export default function RoutePlanner() {
 
   return (
     <>
-      <div className="journeyPlanner bg-gray-600 text-white border rounded-2xl p-4 m-4">
-        <div className="flex mt-4 justify-center items-center">
-          <img src={MetroLogo} alt="" className="h-14 mr-2" />
+      <div className="journeyPlanner bg-[#9cafb7] text-white border-2 border-[#00308f] rounded-2xl p-4 m-4">
+        <div className="flex mt-4 justify-center items-center ">
+          <img
+            src={MetroLogo}
+            alt=""
+            className="h-14 mr-2 bg-white border-4 border-white rounded-full"
+          />
           <h1 className="md:text-3xl text-2xl  font-bold">Plan Your Journey</h1>
         </div>
         <form className="my-2 ">
@@ -82,7 +86,7 @@ export default function RoutePlanner() {
           <select
             name="metroLines"
             id="metroLines"
-            className="bg-white appearance-none border-2 border-black rounded w-full  px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-sky-300 h-8"
+            className="bg-white appearance-none border-2 border-black rounded w-full  px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-[#0e6ba8] h-8"
             onChange={pickStations}
           >
             <option defaultValue={true}> Choose Lines & Station </option>
@@ -114,24 +118,24 @@ export default function RoutePlanner() {
                 );
               })}
           </select>
-          <p className="md:text-2xl font-semibold text-xl pt-4 ">
+          <p className="md:text-2xl font-semibold text-xl pt-4 mt-4">
             Advanced Filter
           </p>
           <div className="flex flex-col ">
-            <button className=" bg-white text-black hover:bg-sky-300 border border-black focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-md  text-center inline-flex items-center pr-16 w-fit mb-2  ">
+            <button className=" bg-white text-black hover:bg-[#9cafb7] hover:text-white border border-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-md  text-center inline-flex items-center pr-16 w-fit mb-2  ">
               <img src={RouteIcon} alt="routeicon" className="h-8 w-8 m-2" />
               Shortest Route
             </button>
-            <button className="  bg-white text-black hover:bg-sky-300 border border-black focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-md  text-center inline-flex items-center pr-3 w-fit  ">
+            <button className="  bg-white text-black hover:bg-[#9cafb7] hover:text-white border border-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-md  text-center inline-flex items-center pr-3 w-fit  ">
               <img src={ChangeIcon} alt="changeicon" className="h-8 w-8 m-2" />
               Minimum Interchange
             </button>
           </div>
-          <div className="mt-4 ">
-            <button className="  bg-white text-black hover:bg-sky-300 border border-black focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-md  text-center inline-flex items-center  w-fit px-6  float-left">
+          <div className="mt-12 ">
+            <button className="   bg-white text-black hover:bg-[#9cafb7] hover:text-white border border-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-md  text-center inline-flex items-center  w-fit px-6  float-left ml-1 p-2">
               Reset
             </button>
-            <button className="  bg-white text-black hover:bg-sky-300 border border-black focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-md  text-center inline-flex items-center px-6 w-fit float-right  ">
+            <button className="  bg-white text-black hover:bg-[#9cafb7] hover:text-white border border-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-md  text-center inline-flex items-center px-6 w-fit float-right p-2 ">
               Show Route &amp; Fare
             </button>
           </div>
@@ -146,3 +150,11 @@ export default function RoutePlanner() {
     </>
   );
 }
+
+// colors
+// #0e6ba8 blue light0.
+// #acbdba greyish tone
+// #ed1c24 red
+// #030027 oxford blue
+// #9cafb7 grey light
+// eaebed flash white

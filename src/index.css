@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.root{
+ background-color: #eaebed; 
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,8 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #efefef;
-  
+    
 }
 
 code {
@@ -18,6 +21,3 @@ code {
     monospace;
 }
 
-.nav{
-  background-color: black;
-}

@@ -12,14 +12,14 @@ function Lines() {
         return (
           <div>
             <div
-              className={`flex flex-col flex-wrap rounded-lg shadow-lg bg-grey-300  justify-center items-center h-auto w-auto py-4  
+              className={`flex flex-col flex-wrap rounded-lg shadow-lg bg-[#eaebed]  justify-center items-center h-auto w-auto py-4  
             transition ease-in-out  hover:-translate-y-1 cursor-pointer `}
               onMouseEnter={(event) => {
                 event.target.style.background = element.primary_color_code;
                 event.target.style.color = "white";
               }}
               onMouseLeave={(event) => {
-                event.target.style.background = "#A9A9A9";
+                event.target.style.background = "#eaebed";
                 event.target.style.color = "#000000";
               }}
             >

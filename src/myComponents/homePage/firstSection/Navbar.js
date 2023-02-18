@@ -51,7 +51,9 @@ export default function NavBar() {
               <img className="logo w-10 " src={MetroLogo} alt="logo" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold  px-1 ">SMR</h2>
+              <h2 className="text-3xl font-bold  px-1 hover:text-[#00308f] ">
+                SMR
+              </h2>
             </div>
           </div>
         </div>
@@ -63,19 +65,19 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-400">
+              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
                 <a href="#.">Home</a>
               </li>
-              <li className="text-gray-600 hover:text-blue-400">
+              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
                 <a href="#.">Network</a>
               </li>
-              <li className="text-gray-600 hover:text-blue-400">
+              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
                 <a href="#.">Security</a>
               </li>
-              <li className="text-gray-600 hover:text-blue-400">
+              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
                 <a href="#.">Contact</a>
               </li>
-              <li className="text-gray-600 hover:text-blue-400">
+              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
                 <a href="#.">FAQ's</a>
               </li>
               <li>
