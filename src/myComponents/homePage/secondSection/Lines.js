@@ -33,14 +33,7 @@ function Lines() {
                 <p className=" font-bold text-sm  ">{element.name}</p>
                 <p className=" text-sm ">{element.line_color}</p>
               </div>
-              {/* <div className="w-16 h-8 pointer-events-none ">
-                <MovingTrain />
-              </div> */}
             </div>
-
-            {/* <div className="w-16 ml-6 h-8  top-0 relative ">
-              <MovingTrain />
-            </div> */}
           </div>
         );
       })}

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import mapImage from "../../../Assets/images/Network_map.jpg";
+import mapImage from "../../../Assets/images/map.png";
 
 export default function MapWindow({
   src = mapImage,
-  magnifierHeight = 250,
-  magnifieWidth = 250,
+  magnifierHeight = 200,
+  magnifieWidth = 200,
   zoomLevel = 3,
 }) {
   const [[x, y], setXY] = useState([0, 0]);
@@ -12,8 +12,10 @@ export default function MapWindow({
   const [showMagnifier, setShowMagnifier] = useState(false);
 
   return (
-    <div className="h-max bg-[#9cafb7] rounded-2xl border-2 border-[#00308f]  m-4">
-      <h1 className="text-3xl text-white text-center font-bold">METRO MAP</h1>
+    <div className="h-max bg-[#9cafb7] rounded-2xl shadow-lg border-[#00308f]  m-4">
+      <h1 className="text-3xl text-white text-center font-bold py-2">
+        METRO MAP
+      </h1>
       <div
         style={{
           position: "relative",
@@ -24,8 +26,8 @@ export default function MapWindow({
         <img
           id="mapnetwork"
           src={src}
+          className="rounded-2xl"
           style={{ height: "100%", width: "100%" }}
-          className=" rounded-2xl"
           onMouseEnter={(e) => {
             // update image size and turn-on magnifier
             const elem = e.currentTarget;
@@ -70,7 +72,7 @@ export default function MapWindow({
             backgroundImage: `url('${src}')`,
             backgroundRepeat: "no-repeat",
             borderRadius: "50%",
-            overflow: "hidden",
+
             //calculate zoomed image size
             backgroundSize: `${imgWidth * zoomLevel}px ${
               imgHeight * zoomLevel

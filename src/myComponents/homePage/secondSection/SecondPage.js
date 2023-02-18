@@ -5,12 +5,16 @@ import Lines from "./Lines";
 
 export default function secondpage() {
   return (
-    <section id="secondSection">
-      <div className="grid md:grid-cols-2 sm:grid-cols-1  ">
-        <MapWindow />
-        <RoutePlanner />
+    <section id="secondSection" className="container">
+      <div className="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+        <div className="my-8">
+          <MapWindow />
+        </div>
+        <div className="my-8">
+          <RoutePlanner />
+        </div>
       </div>
-      <div className="">
+      <div>
         <Lines />
       </div>
     </section>
