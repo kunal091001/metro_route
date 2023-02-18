@@ -12,7 +12,7 @@ export default function MapWindow({
   const [showMagnifier, setShowMagnifier] = useState(false);
 
   return (
-    <div className="bg-[#9cafb7] rounded-2xl border-2 border-[#00308f]  m-4">
+    <div className="h-max bg-[#9cafb7] rounded-2xl border-2 border-[#00308f]  m-4">
       <h1 className="text-3xl text-white text-center font-bold">METRO MAP</h1>
       <div
         style={{
