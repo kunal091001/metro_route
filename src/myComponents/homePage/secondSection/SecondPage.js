@@ -1,17 +1,13 @@
 import React from "react";
 import RoutePlanner from "./RoutePlanner";
 import MapWindow from "./MapWindow";
-import Lines from "./Lines";
 
 export default function secondpage() {
   return (
-    <section id="secondSection">
-      <div className="grid md:grid-cols-2 sm:grid-cols-1  ">
+    <section id="secondSection" className="container m-auto ">
+      <div className="grid lg:grid-cols-2 grid-cols-1 items-center ">
         <MapWindow />
         <RoutePlanner />
-      </div>
-      <div className="">
-        <Lines />
       </div>
     </section>
   );

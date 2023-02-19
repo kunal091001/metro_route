@@ -1,15 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
-import ListCounter from "./ListCounter";
-import ExtraEle from "./ExtraEle";
+import Lines from "./Lines";
 function ThirdPage() {
   return (
-    <section id="thirdSection">
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 m-5   ">
-        <ListCounter />
-        <ExtraEle />
+    <section id="thirdSection container">
+      <div className="m-4">
+        <Lines />
       </div>
-      <div>
+      <div className="">
         <Footer />
       </div>
     </section>
