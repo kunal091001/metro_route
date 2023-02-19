@@ -3,8 +3,8 @@ import React from "react";
 export default function Header() {
   return (
     <header>
-      <div className="bg-[#00308F] flex justify-evenly w-full text-white">
-        <div className="flex justify-center items-center hidden sm:flex mr-5">
+      <div className="bg-[#00308F] flex flex-col md:flex-row justify-evenly w-full text-white">
+        <div className="flex justify-center items-center  sm:flex mr-5">
           <div>
             <strong className="p-2">Follow us on:</strong>
           </div>

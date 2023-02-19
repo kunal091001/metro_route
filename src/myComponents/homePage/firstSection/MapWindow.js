@@ -26,8 +26,8 @@ export default function MapWindow({
         <img
           id="mapnetwork"
           src={src}
-          style={{ height: "100%", width: "100%" }}
           className="rounded-2xl"
+          style={{ height: "100%", width: "100%" }}
           onMouseEnter={(e) => {
             // update image size and turn-on magnifier
             const elem = e.currentTarget;

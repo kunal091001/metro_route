@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NumberCounter from "number-counter";
 export default function ListCounter() {
   return (
-    <div className="grid grid-cols-3 mb-32 w-full sm:border-b-2 rounded-xl py-12 sm:shadow-xl  ">
+    <div className="grid grid-cols-3 mb-32  sm:border-b-2 rounded-xl py-12 sm:shadow-xl  ">
       <div className="flex flex-col text-center border-r-2    ">
         <span className=" md:text-7xl text-5xl   font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#ed1c24]  to-[#03008f] ">
           <NumberCounter end={391} delay={2} />
