@@ -2,31 +2,29 @@ import React, { useState } from "react";
 import NumberCounter from "number-counter";
 export default function ListCounter() {
   return (
-    <div className="flex  flex-row bg-[#eaebed] rounded-lg w-fit h-fit p-2">
-      <div className="flex flex-col text-center p-2  border-r-4 rounded border-white ">
-        <span className=" md:text-3xl text-xl   text-[#00308F] font-semibold">
+    <div className="grid grid-cols-3 mb-32 w-full sm:border-b-2 rounded-xl py-12 sm:shadow-xl  ">
+      <div className="flex flex-col text-center border-r-2    ">
+        <span className=" md:text-7xl text-5xl   font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#ed1c24]  to-[#03008f] ">
           <NumberCounter end={391} delay={2} />
         </span>
-        <span className="mt-2 text-xs ">
-          Total Network Length
-          <br />
-          <i>(km)</i>
+        <span className="mt-2 text-xs sm:text-lg ">
+          Total Network Length &nbsp;<i>(km)</i>
           <i className="text-red-500 font-bold"> *</i>
         </span>
       </div>
-      <div className="flex flex-col text-center p-2 border-r-4 rounded border-white">
-        <span className=" md:text-3xl text-xl text-[#00308F]   font-semibold">
+      <div className="flex flex-col text-center  border-r-2  ">
+        <span className=" md:text-7xl text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#ed1c24]  to-[#03008f]">
           <NumberCounter end={12} delay={3} />
         </span>
-        <span className="mt-2 text-xs ">
+        <span className="mt-2 text-xs sm:text-lg ">
           Total no of Lines <i className="text-red-500 font-bold">*</i>
         </span>
       </div>
-      <div className="flex flex-col p-2 text-center ">
-        <span className="md:text-3xl text-xl text-[#00308F] rounded-xl  font-semibold ">
+      <div className="flex flex-col text-center ">
+        <span className="md:text-7xl text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#ed1c24]  to-[#03008f] rounded-xl   ">
           <NumberCounter end={286} delay={2} />
         </span>
-        <span className="mt-2 text-xs ">
+        <span className="mt-2 text-xs sm:text-lg  ">
           Total no of Stations <i className="text-red-500 font-bold">*</i>
         </span>
       </div>
