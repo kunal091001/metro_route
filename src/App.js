@@ -7,6 +7,7 @@ import Firstpage from "./myComponents/homePage/firstSection/FirstPage";
 import MapWindow from "./myComponents/homePage/firstSection/MapWindow";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LineDetails from "./myComponents/homePage/firstSection/LineDetails";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
             }
           ></Route>
           <Route exact path="/mapwindow" element={<MapWindow />}></Route>
+          <Route exact path="linedetails" element={<LineDetails />}></Route>
         </Routes>
       </Router>
       <Footer />

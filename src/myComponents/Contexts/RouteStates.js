@@ -8,10 +8,21 @@ const RouteStates = (props) => {
 
   const [metroLines, setMetroLines] = useState([]);
   const [stationList, setStationList] = useState([]);
+  const [lineDetails, setLineDetails] = useState([]);
+  const [lineCode, setLineCode] = useState("");
 
   return (
     <RouteContext.Provider
-      value={{ metroLines, setMetroLines, stationList, setStationList }}
+      value={{
+        metroLines,
+        setMetroLines,
+        stationList,
+        setStationList,
+        lineCode,
+        setLineCode,
+        lineDetails,
+        setLineDetails,
+      }}
     >
       {props.children}
     </RouteContext.Provider>

@@ -80,7 +80,7 @@ export default function NavBar() {
               <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
                 <a href="#.">FAQ's</a>
               </li>
-              <li>
+              {/* <li>
                 <div>
                   <form action="search">
                     <button
@@ -131,7 +131,7 @@ export default function NavBar() {
                     </div>
                   </form>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -8,7 +8,7 @@ export default function MapSection() {
         <p className="text-3xl py-5 font-bold text-black  ">Interactive Map</p>
         <img
           src={Map}
-          className="border rounded-xl opacity-50 pointer-events-none "
+          className=" border rounded-xl opacity-50 pointer-events-none "
         ></img>
 
         <Link to="/mapwindow">

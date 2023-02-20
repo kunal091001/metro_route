@@ -3,7 +3,7 @@ import MetroLogo from "../../../Assets/images/metroLogo.jpg";
 
 export default function footer() {
   return (
-    <footer className="p-4 bg-[#00308F] sm:p-6 ">
+    <footer className="p-6 bg-[#00308F] sm:p-6 md:p-16 ">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0 flex items-center">
           <img

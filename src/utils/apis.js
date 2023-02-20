@@ -33,4 +33,17 @@ const getStationList = async (lineName) => {
   });
 };
 
-export { getLineList, getStationList };
+const getLineDetails = async (lineCode) => {
+  return new Promise((resolve, reject) => {
+    callback
+      .get(`/metro_line/${lineCode}`)
+      .then((res) => {
+        resolve(res.data);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
+};
+
+export { getLineList, getStationList, getLineDetails };

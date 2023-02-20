@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <div className="bg-[#00308F] flex flex-col md:flex-row justify-evenly w-full text-white">
-        <div className="flex justify-center items-center  sm:flex mr-5">
+        <div className="flex justify-center items-center  sm:flex ">
           <div>
             <strong className="p-2">Follow us on:</strong>
           </div>
@@ -42,7 +42,7 @@ export default function Header() {
             </a>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="hidden justify-between md:flex">
           <div className="flex mr-5">
             <div className="mt-1">
               <a href="#." className="p-1">

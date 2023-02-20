@@ -13,6 +13,7 @@ export default function RoutePlanner() {
 
   // 0 -> from, 1 -> to
   const [dataState, setDataState] = useState(null);
+  const [color, setColor] = useState(null);
 
   const [stationData, setStationData] = useState({
     from: null,
@@ -23,16 +24,21 @@ export default function RoutePlanner() {
     getLineList()
       .then((res) => {
         setMetroLines(res);
-        console.log(res);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
+  console.log(metroLines);
+
   const pickStations = (event) => {
     getStationList(event.target.value)
       .then((res) => {
+        setColor(
+          metroLines.filter((line) => line.line_code === event.target.value)[0]
+            .secondary_color_code
+        );
         setStationList(res);
         setShowModal(true);
         if (event.target.name === "fromLines") {
@@ -70,6 +76,36 @@ export default function RoutePlanner() {
               From:
             </label>
 
+            {/* <div className=" w-fit h-72 overflow-y-scroll  p-5 ">
+              <ol class="relative ">
+                {metroLines.map((element) => {
+                  return (
+                    <li class="mb-8 ml-4 ">
+                      <div
+                        class="absolute w-4 h-4  rounded-full mt-3 -left-2 border border-white "
+                        style={{
+                          backgroundColor: element?.primary_color_code,
+                        }}
+                      ></div>
+                      <p
+                        class="text-sm font-semibold text-slate-500 "
+                        style={{
+                          borderBottom: `1px solid ${element?.primary_color_code} `,
+                        }}
+                      >
+                        {element?.name} &nbsp; {element.line_color}
+                      </p>
+                      <p className="text-sm font-medium">
+                        {" "}
+                        {element?.start_station}&nbsp; to &nbsp;
+                        {element?.end_station}
+                      </p>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div> */}
+
             <select
               name="fromLines"
               id="fromLines"
@@ -91,7 +127,6 @@ export default function RoutePlanner() {
               {metroLines
                 .filter((metroLineObj) => metroLineObj.id !== 13)
                 .map((element) => {
-                  // console.log("element", element?.primary_color_code);
                   return (
                     <>
                       <option
@@ -102,6 +137,7 @@ export default function RoutePlanner() {
                           padding: "2rem 1rem",
                           margin: "2rem 1rem",
                           fontSize: 18,
+                          // backgroundColor: element.secondary_color_code,
                         }}
                       >
                         {element?.name}: {element?.start_station} to{" "}
@@ -150,7 +186,6 @@ export default function RoutePlanner() {
               {metroLines
                 .filter((metroLineObj) => metroLineObj.id !== 13)
                 .map((element) => {
-                  console.log("element", element?.primary_color_code);
                   return (
                     <>
                       <option
@@ -216,7 +251,7 @@ export default function RoutePlanner() {
             </button>
             <button
               type="reset"
-              class="focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 w-full md:w-1/2"
+              className="focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 w-full md:w-1/2"
             >
               Reset
             </button>
@@ -231,6 +266,7 @@ export default function RoutePlanner() {
         stationData={stationData}
         setStationData={setStationData}
         dataState={dataState}
+        color={color}
       />
     </>
   );
