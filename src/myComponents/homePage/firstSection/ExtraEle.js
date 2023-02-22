@@ -23,7 +23,7 @@ export default function ExtraEle() {
 
               <p className="mb-3 font-normal text-gray-700 ">Visit us</p>
               <a
-                href="#"
+                href="#."
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#003087] rounded-lg hover:bg-[#fff]  border-2 border-[#003087] hover:text-[#003087] "
               >
                 Read more
@@ -46,7 +46,7 @@ export default function ExtraEle() {
         </li>
         <li>
           <div className="w-72 bg-white border border-gray-200 rounded-lg shadow px-5 text-center ">
-            <a href="#">
+            <a href="#.">
               <img
                 className="rounded-t-lg h-32 mt-3 mx-auto"
                 src={Travel}
@@ -54,7 +54,7 @@ export default function ExtraEle() {
               />
             </a>
             <div className="p-5">
-              <a href="#">
+              <a href="#.">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-black ">
                   Travel advisory
                 </h5>
@@ -63,7 +63,7 @@ export default function ExtraEle() {
                 Visit us
               </p>
               <a
-                href="#"
+                href="#."
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#003087] rounded-lg hover:bg-[#fff]  border-2 border-[#003087] hover:text-[#003087] "
               >
                 Read more
@@ -86,7 +86,7 @@ export default function ExtraEle() {
         </li>
         <li>
           <div className="w-72 bg-white border border-gray-200 rounded-lg shadow px-5 text-center ">
-            <a href="#">
+            <a href="#.">
               <img
                 className="rounded-t-lg h-32 mt-3 mx-auto"
                 src={Lost}
@@ -94,7 +94,7 @@ export default function ExtraEle() {
               />
             </a>
             <div className="p-5">
-              <a href="#">
+              <a href="#.">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-black ">
                   Lost &amp; Found
                 </h5>
@@ -103,7 +103,7 @@ export default function ExtraEle() {
                 Visit us
               </p>
               <a
-                href="#"
+                href="#."
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#003087] rounded-lg hover:bg-[#fff]  border-2 border-[#003087] hover:text-[#003087] "
               >
                 Read more
@@ -126,7 +126,7 @@ export default function ExtraEle() {
         </li>
         <li>
           <div className="w-72 bg-white border border-gray-200 rounded-lg shadow px-5 text-center ">
-            <a href="#">
+            <a href="#.">
               <img
                 className="rounded-t-lg h-32 mt-3 mx-auto"
                 src={Ticket}
@@ -134,7 +134,7 @@ export default function ExtraEle() {
               />
             </a>
             <div className="p-5">
-              <a href="#">
+              <a href="#.">
                 <h5 className="mb-2 text-lg font-bold tracking-tight text-black ">
                   Tickets
                 </h5>
@@ -143,7 +143,7 @@ export default function ExtraEle() {
                 Visit us
               </p>
               <a
-                href="#"
+                href="#."
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#003087] rounded-lg hover:bg-[#fff]  border-2 border-[#003087] hover:text-[#003087] "
               >
                 Read more

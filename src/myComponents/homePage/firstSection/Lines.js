@@ -11,7 +11,7 @@ function Lines() {
 
   const moveToLineDetails = (code) => {
     setLineCode(code);
-    navigate("/linedetails");
+    navigate(`/linedetails/${code}`);
   };
 
   return (
@@ -44,11 +44,6 @@ function Lines() {
                   <p className=" text-sm ">{element.line_color}</p>
                 </div>
               </div>
-              {/* {viewDetails && (
-                <button onClick={moveToLineDetails(element.line_code)}>
-                  click me
-                </button>
-              )} */}
             </div>
           );
         })}

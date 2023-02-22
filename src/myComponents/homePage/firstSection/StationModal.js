@@ -8,6 +8,7 @@ export default function StationModal({
   setStationData,
   dataState,
   color,
+  setShowSearchList,
 }) {
   console.log(stationList);
   return (
@@ -15,7 +16,7 @@ export default function StationModal({
       {showModal ? (
         <>
           <div className="h-2/3 m-auto justify-center items-center  flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none ">
-            <div className="relative w-full my-6 mx-auto max-w-3xl h-full ">
+            <div className="relative w-full my-6 mx-auto max-w-3xl h-full  ">
               {/*content*/}
               <div className="border-4 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
@@ -43,6 +44,7 @@ export default function StationModal({
                             return {
                               ...prev,
                               from: element.station_name,
+                              fromStationCode: element.station_code,
                             };
                           });
                         } else {
@@ -50,11 +52,13 @@ export default function StationModal({
                             return {
                               ...prev,
                               to: element.station_name,
+                              toStationCode: element.station_code,
                             };
                           });
                         }
 
                         setShowModal(false);
+                        setShowSearchList(false);
                       }}
                     >
                       <p className=" my-2 text-black font-semibold text-md leading-relaxed pointer-events-none ml-5">

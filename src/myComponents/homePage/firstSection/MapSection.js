@@ -9,6 +9,7 @@ export default function MapSection() {
         <img
           src={Map}
           className=" border rounded-xl opacity-50 pointer-events-none "
+          alt="mapImage"
         ></img>
 
         <Link to="/mapwindow">

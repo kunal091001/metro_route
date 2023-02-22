@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NumberCounter from "number-counter";
 export default function ListCounter() {
   return (

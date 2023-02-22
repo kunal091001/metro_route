@@ -25,7 +25,11 @@ function App() {
             }
           ></Route>
           <Route exact path="/mapwindow" element={<MapWindow />}></Route>
-          <Route exact path="linedetails" element={<LineDetails />}></Route>
+          <Route
+            exact
+            path="linedetails/:paramLineCode"
+            element={<LineDetails />}
+          ></Route>
         </Routes>
       </Router>
       <Footer />
