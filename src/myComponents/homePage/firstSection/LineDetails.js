@@ -35,8 +35,6 @@ export default function LineDetails() {
       });
   }, [paramLineCode]);
 
-  console.log(lineDetails);
-
   return (
     <>
       <div className="flex flex-col  md:flex-row bg-white  justify-evenly items-center shadow-xl rounded-lg my-16 ">
@@ -85,7 +83,7 @@ export default function LineDetails() {
         </div>
         <div className="flex flex-col ">
           <p
-            className="text-2xl  text-center font-bold  "
+            className="text-3xl  text-center font-bold mt-8 "
             style={{ color: lineDetails[0]?.primary_color_code }}
           >
             Station List

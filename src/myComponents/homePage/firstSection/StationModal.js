@@ -10,7 +10,7 @@ export default function StationModal({
   color,
   setShowSearchList,
 }) {
-  console.log(stationList);
+  // console.log(stationList);
   return (
     <>
       {showModal ? (

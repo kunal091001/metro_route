@@ -45,7 +45,7 @@ export default function RoutePlanner() {
         today.getMilliseconds()
     );
 
-    console.log(currDateTime);
+    // console.log(currDateTime);
 
     getResultStations(
       stationData.fromStationCode,
