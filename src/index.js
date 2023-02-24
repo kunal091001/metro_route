@@ -5,6 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import RouteStates from "../src/myComponents/Contexts/RouteStates";
 
+const cors = require("cors");
+
+App.use(
+  cors({
+    origin: "https://metro-route.vercel.app/",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RouteStates>
