@@ -1,0 +1,260 @@
+AIIMS                           AIIMS
+Adarsh Nagar                    ADARSH NAGAR
+Airport                            AIRPORT (T-3)
+Akshardham                          AKSHARDHAM
+Alpha 1
+Anand Vihar                   ANAND VIHAR ISBT
+Arjan Garh                        ARJAN GARH
+Arthala                        ARTHALA
+Ashok Park Main                 ASHOK PARK MAIN
+Ashram                           ASHRAM
+Azadpur                            AZADPUR
+Badarpur                         BADARPUR BORDER
+Badkhal Mor                       BADKAL MOR
+Bahadurgarh City                    BAHADURGARH CITY
+Barakhambha Road                 BARAKHAMBA ROAD
+Bata Chowk                      BATA CHOWK
+Bhikaji Cama Place          BHIKAJI CAMA PLACE
+Botanical Garden                      BOTANICAL GARDEN
+Brigadier Hoshiyar Singh            BRIG. HOSHIAR SINGH
+Central Secretariat               CENTRAL SECRETARIAT
+Chandni Chowk                     CHANDNI CHOWK
+Chawri Bazar                     CHAWRI BAZAR
+Chhatarpur                     CHHATARPUR
+Chirag Delhi                   CHIRAG DELHI
+Civil Lines                       CIVIL LINES
+Dabri Mor-Janakpuri South       DABRI MOR - JANAKPURI SOUTH
+Dashrath Puri                 DASHRATHPURI
+Delhi Aerocity              DELHI AEROCITY
+Delhi Cantonment           DELHI CANTT.
+Delhi Gate                   DELHI GATE
+Delta 1
+Depot
+Dhaula Kuan                          DHAULA KUAN
+Dilshad Garden                   Dilshad Garden
+Durgabai Deshmukh South Campus           DURGABAI DESHMUKH SOUTH CAMPUS
+Dwarka                                  DWARKA
+Dwarka Mor                              DWARKA MOR
+Dwarka Sector 10                   DWARKA SECTOR - 10
+Dwarka Sector 11                      DWARKA SECTOR - 11
+Dwarka Sector 12                          DWARKA SECTOR - 12
+Dwarka Sector 13                      DWARKA SECTOR - 13
+Dwarka Sector 14                     DWARKA SECTOR - 14
+Dwarka Sector 21                        DWARKA SECTOR - 21
+Dwarka Sector 8                          DWARKA SECTOR - 8
+Dwarka Sector 9                         DWARKA SECTOR - 9
+ESI Hospital                     ESI HOSPITAL               
+East Azad Nagar                    EAST AZAD NAGAR
+East Vinod Nagar - Mayur Vihar-II         EAST VINOD NAGAR-MAYUR VIHAR -II
+Escorts Mujesar                          ESCORTS MUJESAR
+Faridabad Old                         OLD FARIDABAD
+GNIDA Office
+GTB Nagar
+Ghevra Metro station                    GHEVRA METRO STATION
+Ghitorni                             GHITORNI
+Gokulpuri                         GOKULPURI
+Golf Course                              GOLF COURSE
+Govind Puri                           GOVINDPURI
+Greater Kailash             GREATER KAILASH
+Green Park                      GREEN PARK
+Guru Dronacharya                  GURU DRONACHARYA
+HUDA City Centre                   HUDA CITY CENTRE
+Haiderpur                    HAIDERPUR BADLI MOR
+Harkesh Nagar                     HARKESH NAGAR OKHLA
+Hauz Khas                       HAUZ KHAS
+Hazrat Nizamuddin                SARAI KALE KHAN - NIZAMUDDIN
+Hindon                       HINDON RIVER
+IFFCO Chowk                   IFFCO CHOWK
+IIT Delhi                       IIT
+INA                          DILLI HAAT - INA
+IP Extension            I.P. EXTENSION
+ITO                              ITO
+Inderlok                              INDERLOK
+Indraprastha                          INDRAPRASTHA
+IndusInd Bank Cyber City           CYBER CITY
+Jaffrabad                           JAFRABAD
+Jahangirpuri                       JAHANGIRPURI
+Jama Masjid                  JAMA MASJID
+Jamia Millia Islamia             JAMIA MILIA ISLAMIYA
+Janakpuri East                   JANAK PURI EAST
+Janakpuri West                          JANAK PURI WEST
+Jangpura                     JANGPURA
+Janpath                       JANPATH
+Jasola Apollo                          JASOLA-APOLLO
+Jasola Vihar Shaheen Bagh           JASOLA VIHAR SHAHEEN BAGH
+Jawaharlal Nehru Stadium          JLN STADIUM
+Jhandewalan                   JHANDEWALAN
+Jhilmil                        JHILMIL
+Johri Enclave                    JOHRI ENCLAVE
+Jor Bagh                          JOR BAGH
+Kailash Colony                    KAILASH COLONY
+Kalindi Kunj                      KALINDI KUNJ
+Kalkaji Mandir                   KALKAJI MANDIR
+Kanhiya Nagar                     KANHAIYA NAGAR
+Karkarduma                         KARKARDUMA
+Karkarduma Court                    KARKARDUMA COURT
+Karol Bagh                          KAROL BAGH
+Kashmere Gate                         KASHMERE GATE
+Kaushambi                           KAUSHAMBI
+Keshav Puram                       KESHAV PURAM
+Khan Market                        KHAN MARKET
+Kirti Nagar                            KIRTI NAGAR
+Knowledge Park II
+Kohat Enclave                        KOHAT ENCLAVE
+Krishna Nagar                        KRISHNA NAGAR
+Lajpat Nagar                      LAJPAT NAGAR
+Lal Qila                               LAL QUILA
+Laxmi Nagar                            LAXMI NAGAR
+Lok Kalyan Marg                        LOK KALYAN MARG
+MG Road                             M.G. ROAD
+Madipur                                   MADIPUR
+Majlis Park                      MAJLIS PARK
+Major Mohit Sharma     MAJOR MOHIT SHARMA RAJENDRA NAGAR
+Malviya Nagar               MALVIYA NAGAR
+Mandawali - West Vinod Nagar          MANDAWALI - WEST VINOD NAGAR
+Mandi House                    MANDI HOUSE
+Mansarovar Park                 MANSAROVAR PARK
+Maujpur-Babarpur                MAUJPUR-BABARPUR
+Mayapuri                         MAYAPURI
+Mayur Vihar - I                      MAYUR VIHAR -I
+Mayur Vihar Extension                  MAYUR VIHAR EXTENSION
+Mayur Vihar Pocket I               MAYUR VIHAR POCKET-1
+Mewala Maharajpur                       MEWALA MAHARAJPUR
+Micromax Moulsari Avenue            MOULSARI AVENUE
+Model Town                           AZADPUR
+Mohan Estate                    MOHAN ESTATE
+Mohan Nagar                                    MOHAN NAGAR
+Moolchand                         MOOLCHAND
+Moti Nagar                         MOTI NAGAR
+Mundka                             MUNDKA
+Mundka Industrial Area             MUNDKA INDUSTRIAL AREA (MIA)
+Munirka                          MUNIRKA
+NHPC Chowk                        NHPC CHOWK
+NSEZ            
+Najafgrah                 NAJAFGARH
+Nangli                    NANGLI
+Nangloi                              NANGLOI
+Nangloi Railway station               NANGLOI RAILWAY STATION
+Naraina Vihar                        NARAINA VIHAR
+Nawada                                 NAWADA
+Neelam Chowk Ajronda                     NEELAM CHOWK AJRONDA
+Nehru Enclave                          NEHRU ENCLAVE
+Nehru Place                               NEHRU PLACE
+Netaji Subhash Place                     NETAJI SUBHASH PLACE
+New Ashok Nagar                         NEW ASHOK NAGAR
+New Delhi                               NEW DELHI (Yellow & Airport Line)
+Nirman Vihar                       NIRMAN VIHAR
+Noida City Centre              NOIDA CITY CENTRE
+Noida Electronic City           NOIDA ELECTRONIC CITY
+Noida Sector 101
+Noida Sector 137  
+Noida Sector 142
+Noida Sector 143
+Noida Sector 144
+Noida Sector 145
+Noida Sector 146
+Noida Sector 147
+Noida Sector 148
+Noida Sector 15                  NOIDA SECTOR-15
+Noida Sector 16                    NOIDA SECTOR-16
+Noida Sector 18                   NOIDA SECTOR-18
+Noida Sector 34                     SECTOR - 34 NOIDA
+Noida Sector 50
+Noida Sector 51
+Noida Sector 52                   SECTOR - 52 NOIDA
+Noida Sector 59
+Noida Sector 61                       SECTOR - 61 NOIDA
+Noida Sector 62                        SECTOR - 62 NOIDA
+Noida Sector 76
+Noida Sector 81
+Noida Sector 83
+Okhla Bird Sanctuary                      OKHLA BIRD SANCTUARY
+Okhla NSIC                          OKHLA NSIC
+Okhla Vihar                 OKHLA VIHAR
+Palam                        PALAM
+Panchsheel Park                     PANCHSHEEL PARK
+Pandit Shree Ram Sharma                PANDIT SHREE RAM SHARMA
+Pari Chowk
+Paschim Vihar East                      PASCHIM VIHAR EAST
+Paschim Vihar West                     PASCHIM VIHAR WEST
+Patel Chowk                        PATEL CHOWK
+Patel Nagar                           PATEL NAGAR
+Peera Garhi                         PEERAGARHI
+Phase 1                 PHASE-1
+Phase 2                  PHASE-2
+Phase 3            PHASE-3
+Pitam Pura                         PITAMPURA
+Pragati Maidan
+Pratap Nagar
+Preet Vihar                           PREET VIHAR
+Pul Bangash
+Punjabi Bagh                         PUNJABI BAGH
+Punjabi Bagh West                      PUNJABI BAGH WEST
+Qutub Minar               QUTAB MINAR
+R.K.Puram            R.K.PURAM
+Raj Bagh                RAJ BAGH
+Raja Nahar Singh                 RAJA NAHAR SINGH (BALLABHGARH)
+Rajdhani Park                    RAJDHANI PARK
+Rajendra Place                  RAJENDRA PLACE
+Rajiv Chowk                 RAJIV CHOWK
+Rajouri Garden             RAJOURI GARDEN
+Ramakrishna Ashram Marg         RAMAKRISHNA ASHRAM MARG
+Ramesh Nagar                  RAMESH NAGAR
+Rithala                               RITHALA
+Rohini East                       ROHINI EAST
+Rohini Sector 18                ROHINI SECTOR - 18, 19
+Rohini West                         ROHINI WEST
+Sadar Bazaar Cantonment                SADAR BAZAR CANTONMENT
+Saket                                 SAKET
+Samaypur Badli                      SAMAYPUR BADLI
+Sant Surdas                     SANT SURDAS (SIHI)
+Sarai                       SARAI
+Sarita Vihar                       SARITA VIHAR
+Sarojini Nagar                    SAROJINI NAGAR
+Satguru Ram Singh Marg                   SATGURU RAM SINGH MARG
+Sector 28                         SECTOR-28
+Sector 42-43               SECTOR-42-43
+Sector 53-54                  SECTOR-53-54
+Sector 54 Chowk           SECTOR-54 CHOWK
+Sector 55–56              SECTOR 55-56
+Seelampur                  WELCOME
+Shadipur                 SHADIPUR
+Shahdara                   SHAHDARA
+Shaheed Nagar               SHAHEED NAGAR
+Shaheed Sthal               SHAHEED STHAL ( NEW BUS ADDA)
+Shakurpur                   SHAKURPUR
+Shalimar Bagh                  SHALIMAR BAGH
+Shankar Vihar               SHANKAR VIHAR
+Shastri Nagar                     SHASTRI NAGAR
+Shastri Park                      SHASTRI PARK
+Shiv Vihar                     SHIV VIHAR
+Shivaji Park                          SHIVAJI PARK
+Shivaji Stadium                   SHIVAJI STADIUM
+Shyam park                 SHYAM PARK
+Sikandarpur                 SIKANDERPUR
+Sir Vishweshwaraiah Moti Bagh        SIR M. VISHWESHWARAIAH MOTI BAGH
+South Extension                  SOUTH EXTENSION
+Subhash Nagar                    SUBHASH NAGAR
+Sukhdev Vihar             SUKHDEV VIHAR
+Sultanpur                                SULTANPUR
+Surajmal Stadium                    MAHARAJA SURAJMAL STADIUM
+Tagore Garden                        TAGORE GARDEN
+Terminal 1-IGI Airport            TERMINAL 1-IGI AIRPORT
+Tikri Border                     TIKRI BORDER
+Tikri Kalan                       TIKRI KALAN
+Tilak Nagar                      TILAK NAGAR
+Tis Hazari
+Trilokpuri Sanjay Lake       TRILOKPURI-SANJAY LAKE
+Tughlakabad                     TUGHLAKABAD STATION
+Udyog Bhawan                        UDYOG BHAWAN
+Udyog Nagar                               UDYOG NAGAR
+Uttam Nagar East                    UTTAM NAGAR EAST
+Uttam Nagar West                     UTTAM NAGAR WEST
+Vaishali                                 VAISHALI
+Vasant Vihar             SHANKAR VIHAR
+Vidhan Sabha                     VIDHAN SABHA
+Vinobapuri                      VINOBAPURI
+Vishwa Vidyalaya                  VISWAVIDYALAYA
+Vodafone Belvedere Towers           BELVEDERE TOWERS
+Welcome                           WELCOME
+Yamuna Bank                        YAMUNA BANK

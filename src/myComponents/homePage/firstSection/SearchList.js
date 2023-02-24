@@ -65,7 +65,7 @@ export default function SearchList({
 
         <ol className="relative mt-8">
           {metroLines
-            .filter((metroLineObj) => metroLineObj.id !== 13)
+            // .filter((metroLineObj) => metroLineObj.id !== 13)
             .map((element) => {
               return (
                 <li

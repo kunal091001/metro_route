@@ -8,6 +8,7 @@ import MapWindow from "./myComponents/homePage/firstSection/MapWindow";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LineDetails from "./myComponents/homePage/firstSection/LineDetails";
+import ResultRoute from "./myComponents/homePage/firstSection/ResultRoute";
 function App() {
   return (
     <>
@@ -29,6 +30,11 @@ function App() {
             exact
             path="linedetails/:paramLineCode"
             element={<LineDetails />}
+          ></Route>
+          <Route
+            exact
+            path="/resultroute/:paramChangedFinalStationFrom/to/:paramChangedFinalStationTo"
+            element={<ResultRoute />}
           ></Route>
         </Routes>
       </Router>
