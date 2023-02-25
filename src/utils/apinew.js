@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseURL = "https://us-central1-delhimetroapi.cloudfunctions.net";
+const baseURL =
+  "https://cors-anywhere.herokuapp.com/https://us-central1-delhimetroapi.cloudfunctions.net";
 
 const callback = axios.create({
   baseURL: baseURL,
