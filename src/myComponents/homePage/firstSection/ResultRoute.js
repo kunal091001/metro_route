@@ -17,8 +17,6 @@ export default function ResultRoute() {
   const { paramChangedFinalStationFrom, paramChangedFinalStationTo } =
     useParams();
 
-  console.log(finalStationList?.path);
-
   useEffect(() => {
     if (
       paramChangedFinalStationFrom !== "" &&
@@ -53,12 +51,13 @@ export default function ResultRoute() {
                 Station List
               </p>
               <div>
-                Total time to reach destination : {finalStationList?.time}
+                Total time to reach destination :{" "}
+                {finalStationList?.result?.time}
               </div>
               <div className=" w-1/2 overflow-y-scroll  p-5 m-10    scrollbar-thumb-gray-200  scrollbar-track-transparent scrollbar-thin  scrollbar-thumb-rounded-2xl ">
                 <div className="h-96">
                   <ol className="relative border-l-2 border-[#003087]">
-                    {finalStationList?.path?.map((element) => {
+                    {finalStationList?.result?.path.map((element) => {
                       return (
                         <li className="mb-8 ml-4">
                           <div className="absolute w-5 h-5  rounded-full mt-1.5 -left-[0.7rem] border border-white bg-[#003087] "></div>

@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const baseURL =
-  "https://cors-anywhere.herokuapp.com/https://us-central1-delhimetroapi.cloudfunctions.net";
+const baseURL = "https://api-metro-project.vercel.app/api";
 
 const callback = axios.create({
   baseURL: baseURL,
@@ -10,7 +9,7 @@ const callback = axios.create({
 const getResultStations = async (fromStationName, toStationName) => {
   return new Promise((resolve, reject) => {
     callback
-      .get(`/route-get?from=${fromStationName}&to=${toStationName}`)
+      .get(`/shortestDist?from=${fromStationName}&to=${toStationName}`)
       .then((res) => {
         resolve(res.data);
       })
