@@ -5,38 +5,20 @@ import { useParams } from "react-router-dom";
 import { getResultStations } from "../../../utils/apinew";
 
 export default function ResultRoute() {
-  const {
-    finalStationList,
-    setFinalStationList,
-    changedFinalStationFrom,
-    setChangedFinalStationFrom,
-    changedFinalStationTo,
-    setChangedFinalStationTo,
-  } = useContext(RouteContext);
+  const { finalStationList, setFinalStationList } = useContext(RouteContext);
 
-  const { paramChangedFinalStationFrom, paramChangedFinalStationTo } =
-    useParams();
+  const { paramFinalStationFrom, paramFinalStationTo } = useParams();
 
   useEffect(() => {
-    if (
-      paramChangedFinalStationFrom !== "" &&
-      paramChangedFinalStationTo !== ""
-    ) {
-      getResultStations(
-        paramChangedFinalStationFrom,
-        paramChangedFinalStationTo
-      )
-        .then((res) => {
-          console.log(res);
-          setFinalStationList(res);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    } else {
-      alert("Click Again");
-    }
-  }, [paramChangedFinalStationFrom, paramChangedFinalStationTo]);
+    getResultStations(paramFinalStationFrom, paramFinalStationTo)
+      .then((res) => {
+        console.log(res);
+        setFinalStationList(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, [paramFinalStationFrom, paramFinalStationTo]);
 
   return (
     <>

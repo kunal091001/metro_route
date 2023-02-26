@@ -33,7 +33,7 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/resultroute/:paramChangedFinalStationFrom/to/:paramChangedFinalStationTo"
+            path="/resultroute/:paramFinalStationFrom/to/:paramFinalStationTo"
             element={<ResultRoute />}
           ></Route>
         </Routes>

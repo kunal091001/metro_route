@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const baseURL = "https://api-metro-project.vercel.app/api";
-
+const baseURL =
+  "https://api-metro-project-ofuc8npjv-kunal091001.vercel.app/api";
 const callback = axios.create({
   baseURL: baseURL,
 });
