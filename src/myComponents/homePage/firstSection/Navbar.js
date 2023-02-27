@@ -46,7 +46,7 @@ export default function NavBar() {
               )}
             </button>
           </div>
-          <div className="flex items-center ">
+          <div className="inline-flex pr-12 sm:pr-0 mx-auto  sm:mx-0 items-center">
             <div>
               <img className="logo w-10 " src={MetroLogo} alt="logo" />
             </div>
@@ -58,29 +58,28 @@ export default function NavBar() {
           </div>
         </div>
 
-        <div>
-          <div
-            className={`flex-1 justify-self-center pb-3  mt-4 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            <ul className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
-                <a href="#.">Home</a>
-              </li>
-              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
-                <a href="#.">Network</a>
-              </li>
-              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
-                <a href="#.">Security</a>
-              </li>
-              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
-                <a href="#.">Contact</a>
-              </li>
-              <li className="text-black hover:text-[#00308f] font-semibold text-lg ">
-                <a href="#.">FAQ's</a>
-              </li>
-              {/* <li>
+        <div
+          className={`flex justify-center pb-3  mt-4 md:block md:pb-0 md:mt-0  ${
+            navbar ? "block" : "hidden"
+          }`}
+        >
+          <ul className=" items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0 ">
+            <li className="text-black hover:text-[#00308f] font-bold text-xl  md:text-lg text-center">
+              <a href="#.">Home</a>
+            </li>
+            <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center   ">
+              <a href="#.">Network</a>
+            </li>
+            <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
+              <a href="#.">Security</a>
+            </li>
+            <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
+              <a href="#.">Contact</a>
+            </li>
+            <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
+              <a href="#.">FAQ's</a>
+            </li>
+            {/* <li>
                 <div>
                   <form action="search">
                     <button
@@ -132,8 +131,7 @@ export default function NavBar() {
                   </form>
                 </div>
               </li> */}
-            </ul>
-          </div>
+          </ul>
         </div>
       </div>
     </nav>

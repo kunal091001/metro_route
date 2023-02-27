@@ -24,7 +24,7 @@ export default function Firstpage() {
     <>
       <div className="max-w-screen-xl  mx-auto">
         <div className="flex flex-col items-center  ">
-          <h1 className="md:text-9xl text-7xl my-5 sm:my-14   text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#00308F]  to-[#ed1c24]  ">
+          <h1 className="md:text-9xl text-7xl my-5 sm:my-14   text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-[#03008f]  to-[#ed1c24]  ">
             Find Your Route With SMR
           </h1>
         </div>

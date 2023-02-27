@@ -21,11 +21,7 @@ export default function RoutePlanner() {
   });
 
   const getFinalResults = () => {
-    if (stationData.from !== "" && stationData.to !== "") {
-      navigate(`/resultroute/${stationData.from}/to/${stationData.to}`);
-    } else {
-      alert("Please Click Again The Same Button");
-    }
+    navigate(`/resultroute/${stationData.from}/to/${stationData.to}`);
   };
 
   return (
@@ -52,7 +48,7 @@ export default function RoutePlanner() {
             </h1>
           </div>
 
-          <form>
+          <form onSubmit={getFinalResults}>
             <div className="mb-3">
               <label
                 htmlFor="fromLines"
@@ -64,7 +60,7 @@ export default function RoutePlanner() {
                 type="text"
                 id="fromLines "
                 name="fromLines"
-                className="bg-white border-2 border-[#003087] text-black font-semibold text-sm rounded-lg  block w-full p-2.5"
+                className="bg-white border-2 border-[#03008f] text-black font-semibold text-sm rounded-lg  block w-full p-2.5"
                 placeholder="Choose Line & Station"
                 required
                 defaultValue={stationData.from}
@@ -91,7 +87,7 @@ export default function RoutePlanner() {
                 type="text"
                 id="toLines "
                 name="toLines"
-                className="bg-white border-2 border-[#003087] text-black font-semibold text-sm rounded-lg  block w-full p-2.5"
+                className="bg-white border-2 border-[#03008f] text-black font-semibold text-sm rounded-lg  block w-full p-2.5"
                 placeholder="Choose Line & Station"
                 required
                 defaultValue={stationData.to}
@@ -122,10 +118,14 @@ export default function RoutePlanner() {
                   width={25}
                   height={25}
                   className="mr-2"
+                  type="submit"
                 />
                 Shortest Route
               </button>
-              <button className="flex focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-6 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 ">
+              <button
+                className="flex focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-6 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 "
+                disabled
+              >
                 <img
                   src={ChangeIcon}
                   alt="changeicon"
@@ -136,24 +136,23 @@ export default function RoutePlanner() {
                 Minimum Interchange
               </button>
             </div>
-          </form>
 
-          <div className="mt-4 flex flex-col md:flex-row">
-            <button
-              className=" focus:outline-none cursor-pointer text-white bg-[#03008f]  rounded-md  outline-none   shadow-md dark:shadow-lg border-2 border-[#03008f]  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  mr-2  my-2 w-full md:w-1/2"
-              onClick={getFinalResults}
-            >
-              Show Route &amp; Fare
-            </button>
-            <button
-              type="reset"
-              className="focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 w-full md:w-1/2"
-              onClick={() => setStationData({ from: null, to: null })}
-            >
-              Reset
-            </button>
-          </div>
-          {/* </form> */}
+            <div className="mt-4 flex flex-col md:flex-row">
+              <button
+                className=" focus:outline-none cursor-pointer text-white bg-[#03008f]  rounded-md  outline-none   shadow-md dark:shadow-lg border-2 border-[#03008f]  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  mr-2  my-2 w-full md:w-1/2"
+                type="submit"
+              >
+                Show Route &amp; Fare
+              </button>
+              <button
+                type="reset"
+                className="focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 w-full md:w-1/2"
+                onClick={() => setStationData({ from: null, to: null })}
+              >
+                Reset
+              </button>
+            </div>
+          </form>
         </div>
       )}
     </>
