@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import RouteContext from "../../Contexts/RouteContext";
 import Train from "../../../Assets/images/train.png";
-import MovingTrain from "../../lottieAnimations/animation2";
+import Animation from "../../lottieAnimations/Animation";
 
 function Lines() {
   const { metroLines, setMetroLines, lineCode, setLineCode } =

@@ -15,7 +15,7 @@ export default function StationModal({
     <>
       {showModal ? (
         <>
-          <div className="h-2/3 m-auto justify-center items-center  flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none ">
+          <div className="h-2/3 m-auto justify-center items-center  flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none  ">
             <div className="relative w-full my-6 mx-auto max-w-3xl h-full  ">
               {/*content*/}
               <div className="border-4 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -36,7 +36,7 @@ export default function StationModal({
                 {stationList.map((element) => {
                   return (
                     <div
-                      className="relative px-2 flex flex-row justify-between hover:bg-[#eaebed]   "
+                      className="relative px-2 flex flex-row justify-between hover:bg-[#eaebed] cursor-pointer   "
                       // style={{ backgroundColor: color }}
                       onDoubleClick={() => {
                         if (dataState === 0) {

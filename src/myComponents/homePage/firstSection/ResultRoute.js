@@ -3,38 +3,81 @@ import RouteContext from "../../Contexts/RouteContext";
 import MapWindow from "./MapWindow";
 import { useParams } from "react-router-dom";
 import { getResultStations } from "../../../utils/apinew";
-
+import Animation from "../../lottieAnimations/Animation";
+import Arrows from "../../../Assets/images/arrows.png";
 export default function ResultRoute() {
   const { finalStationList, setFinalStationList } = useContext(RouteContext);
-
+  const [loading, setLoading] = useState(true);
   const { paramFinalStationFrom, paramFinalStationTo } = useParams();
-
+  const [showInterChange, setShowInterChange] = useState(false);
   const date = new Date();
-  const time = date.toLocaleString("en-us", {
+  const totalTimeToDestination = Math.round(finalStationList?.result?.time);
+  var counter = 0;
+  const startingTime = date.toLocaleString("en-us", {
     hour: "numeric",
     minute: "numeric",
     hour12: true,
   });
 
-  // const endTime=
+  function checkInterchange(currStation) {
+    if (
+      currStation === finalStationList?.result?.interchange[counter] &&
+      counter < finalStationList?.result?.interchange.length
+    ) {
+      counter++;
+      return (
+        <>
+          <div className="flex justify-between">
+            <p className="font-bold text-lg ">{currStation}</p>
+            <div className="relative flex flex-col items-center group">
+              <span className="fi fi-br-shuffle  text-black  px-2 mr-8 cursor-pointer"></span>
+              <div className="absolute bottom-0  flex-col items-center hidden mb-8 group-hover:flex">
+                <span className="relative -left-4 z-10 px-2 py-2 pb-3 text-xs leading-none text-white whitespace-no-wrap bg-[#00308F] shadow-lg rounded-md pointer-events-none w-max">
+                  Interchange Station
+                </span>
+                <div className="relative -left-4 w-3 h-3 z-10 -mt-2 rotate-45 bg-[#00308F]"></div>
+              </div>
+            </div>
+          </div>
+        </>
+      );
+    } else {
+      return currStation;
+    }
+  }
+  function addMinutes(date, minutes) {
+    return new Date(date.getTime() + minutes * 60000);
+  }
+  const getreachTime = addMinutes(date, totalTimeToDestination);
 
-  // var interchangeCounter = 0;
-
-  // console.log(new Date(`2023-02-27T02:${finalStationList?.result?.time}:00Z`));
+  const reachingTime = getreachTime.toLocaleString("en-us", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  });
 
   useEffect(() => {
+    setLoading(true);
     getResultStations(paramFinalStationFrom, paramFinalStationTo)
       .then((res) => {
         console.log(res);
         setFinalStationList(res);
+        setTimeout(() => {
+          setLoading(false);
+        }, 2200);
       })
+
       .catch((error) => {
+        setLoading(true);
         console.log(error);
       });
   }, [paramFinalStationFrom, paramFinalStationTo]);
 
   return (
     <>
+      {/* {loading && <Animation />} */}
+
+      {/* {!loading && ( */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 ">
         <div className="border shadow-xl rounded-2xl ">
           <div className="flex flex-col m-auto">
@@ -44,11 +87,11 @@ export default function ResultRoute() {
               </div>
               <div className="text-base flex items-center justify-evenly font-bold text-slate-600  ">
                 <span className="fi fi-br-time-quarter-past text-black text-4xl p-3"></span>
-                &nbsp; {time} --&nbsp;
-                {time}
+                &nbsp; {startingTime} --&nbsp;
+                {reachingTime}
                 <span className="text-xl">
                   {" "}
-                  {Math.round(finalStationList?.result?.time)}
+                  {totalTimeToDestination}
                   &nbsp;Minutes
                 </span>{" "}
               </div>
@@ -66,9 +109,9 @@ export default function ResultRoute() {
                   return (
                     <li className="mb-8 ml-4">
                       <div className="absolute w-5 h-5  rounded-full mt-1.5 -left-[0.7rem] border border-white bg-[#03008f] "></div>
-                      <p className="text-md font-semibold text-gray-900 border-b-2 border-[#03008f]  ">
-                        {element}
-                      </p>
+                      <div className="text-md font-semibold text-gray-900 border-b-2 border-[#03008f]  ">
+                        {checkInterchange(element)}
+                      </div>
                     </li>
                   );
                 })}
@@ -81,6 +124,7 @@ export default function ResultRoute() {
           <MapWindow />
         </div>
       </div>
+      {/* )} */}
     </>
   );
 }

@@ -43,7 +43,7 @@ export default function SearchList({
     <>
       <div
         className="bg-[#fff] text-black shadow-2xl  
-      h-[38.7rem]  md:h-[29.7rem] overflow-y-scroll rounded-2xl scrollbar-thumb-red-700  scrollbar-track-transparent scrollbar-thin  scrollbar-thumb-rounded-2xl p-8 mx-4"
+      h-[38.7rem]  md:h-[29.7rem] overflow-y-scroll rounded-2xl scrollbar-thumb-red-700  scrollbar-track-transparent scrollbar-thin  scrollbar-thumb-rounded-2xl p-8 mx-4 "
       >
         <div className="flex justify-center items-center mb-2">
           <img
@@ -69,7 +69,7 @@ export default function SearchList({
             .map((element) => {
               return (
                 <li
-                  className="mb-8  "
+                  className="mb-8 cursor-pointer "
                   onClick={() => pickStations(element.line_code)}
                 >
                   <div

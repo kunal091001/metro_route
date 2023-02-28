@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 import MetroLogo from "../../../Assets/images/metroLogo.jpg";
 import RouteIcon from "../../../Assets/images/route.png";
 import ChangeIcon from "../../../Assets/images/arrows.png";
-import { getResultStations } from "../../../utils/apinew";
 import { useNavigate } from "react-router-dom";
 import SearchList from "./SearchList";
 import RouteContext from "../../Contexts/RouteContext";
+import Animation from "../../lottieAnimations/Animation";
 
 export default function RoutePlanner() {
   const [showSearchList, setShowSearchList] = useState(false);
@@ -21,7 +21,12 @@ export default function RoutePlanner() {
   });
 
   const getFinalResults = () => {
-    navigate(`/resultroute/${stationData.from}/to/${stationData.to}`);
+    if (stationData.from !== null && stationData.to !== null) {
+      navigate(`/resultroute/${stationData.from}/to/${stationData.to}`);
+    } else {
+      alert("Empty Source and Destination");
+      navigate("/");
+    }
   };
 
   return (
