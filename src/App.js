@@ -2,7 +2,7 @@ import "./App.css";
 import NavBar from "./myComponents/homePage/firstSection/Navbar";
 import Header from "./myComponents/homePage/firstSection/Header";
 import Footer from "./myComponents/homePage/firstSection/Footer";
-
+import Security from "./myComponents/homePage/firstSection/Security";
 import Firstpage from "./myComponents/homePage/firstSection/FirstPage";
 import MapWindow from "./myComponents/homePage/firstSection/MapWindow";
 
@@ -26,6 +26,7 @@ function App() {
             }
           ></Route>
           <Route exact path="/mapwindow" element={<MapWindow />}></Route>
+          <Route exact path="/security" element={<Security />}></Route>
           <Route
             exact
             path="linedetails/:paramLineCode"

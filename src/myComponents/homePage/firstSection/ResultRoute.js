@@ -110,6 +110,7 @@ export default function ResultRoute() {
                         <div className="absolute w-5 h-5  rounded-full mt-1.5 -left-[0.7rem] border border-white bg-[#03008f] "></div>
                         <div className="text-md font-semibold text-gray-900 border-b-2 border-[#03008f]  ">
                           {checkInterchange(element)}
+                          <i>Click Here for Station Detail</i>
                         </div>
                       </li>
                     );

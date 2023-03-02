@@ -13,9 +13,12 @@ export default function MapWindow({
 
   return (
     <div className="bg-[#fff] rounded-2xl  shadow-2xl h-fit m-4">
-      <h1 className="sm:text-3xl text-2xl text-black text-center font-bold py-2">
+      <h1 className="sm:text-5xl text-2xl text-black text-center font-bold py-2">
         METRO MAP
       </h1>
+      <p className="text-center text-slate-400 text-sm pb-4 pt-2">
+        Hover On Map To Focus
+      </p>
       <div
         style={{
           position: "relative",

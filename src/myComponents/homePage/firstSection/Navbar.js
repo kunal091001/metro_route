@@ -1,6 +1,7 @@
 import React from "react";
 import MetroLogo from "../../../Assets/images/metroLogo.jpg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -65,13 +66,13 @@ export default function NavBar() {
         >
           <ul className=" items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0 ">
             <li className="text-black hover:text-[#00308f] font-bold text-xl  md:text-lg text-center">
-              <a href="#.">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center   ">
-              <a href="#.">Network</a>
+              <Link to="/lines">Network</Link>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
-              <a href="#.">Security</a>
+              <Link to="/security">Security</Link>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
               <a href="#.">Contact</a>
