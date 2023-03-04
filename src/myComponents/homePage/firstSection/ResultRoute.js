@@ -93,7 +93,7 @@ export default function ResultRoute() {
     paramFinalStationFromCode,
     paramFinalStationToCode,
   ]);
-  console.log(finalFare);
+  // console.log(finalFare);
   setFare(finalFare?.weekday_fare);
 
   return (
