@@ -19,7 +19,6 @@ export default function SearchList({
   const [color, setColor] = useState(null);
 
   const pickStations = (lineCode) => {
-    // console.log(lineCode);
     getStationList(lineCode)
       .then((res) => {
         setColor(

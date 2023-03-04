@@ -1,11 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import MetroLogo from "../../../Assets/images/metroLogo.jpg";
 import RouteIcon from "../../../Assets/images/route.png";
 import ChangeIcon from "../../../Assets/images/arrows.png";
 import { useNavigate } from "react-router-dom";
 import SearchList from "./SearchList";
 import RouteContext from "../../Contexts/RouteContext";
-import Animation from "../../lottieAnimations/Animation";
+import { useContext } from "react";
 
 export default function RoutePlanner() {
   const [showSearchList, setShowSearchList] = useState(false);
@@ -14,15 +14,21 @@ export default function RoutePlanner() {
   const [dataState, setDataState] = useState(null);
   // const [color, setColor] = useState(null);
 
-  const [stationData, setStationData] = useState({
-    stationStatus: "",
-    from: null,
-    to: null,
-  });
+  // const [stationData, setStationData] = useState({
+  //   stationStatus: "",
+  //   from: null,
+  //   to: null,
+  //   fromStationCode: null,
+  //   toStationCode: null,
+  // });
+
+  const { stationData, setStationData } = useContext(RouteContext);
 
   const getFinalResults = () => {
     if (stationData.from !== null && stationData.to !== null) {
-      navigate(`/resultroute/${stationData.from}/to/${stationData.to}`);
+      navigate(
+        `/resultroute/${stationData.from}/${stationData.fromStationCode}/to/${stationData.to}/${stationData.toStationCode}`
+      );
     } else {
       alert("Empty Source and Destination");
       navigate("/");
@@ -68,7 +74,7 @@ export default function RoutePlanner() {
                 className="bg-white border-2 border-[#03008f] text-black font-semibold text-sm rounded-lg  block w-full p-2.5"
                 placeholder="Choose Line & Station"
                 required
-                defaultValue={stationData.from}
+                defaultValue={stationData.from ? stationData.from : ""}
                 onFocus={() => {
                   setShowSearchList((prev) => !prev);
                   setStationData((prev) => {
@@ -95,7 +101,7 @@ export default function RoutePlanner() {
                 className="bg-white border-2 border-[#03008f] text-black font-semibold text-sm rounded-lg  block w-full p-2.5"
                 placeholder="Choose Line & Station"
                 required
-                defaultValue={stationData.to}
+                defaultValue={stationData.to ? stationData.to : ""}
                 onFocus={() => {
                   setShowSearchList((prev) => !prev);
                   setStationData((prev) => {
@@ -129,6 +135,7 @@ export default function RoutePlanner() {
               </button>
               <button
                 className="flex focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-6 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 "
+                // onClick={getInterchange}
                 disabled
               >
                 <img
@@ -152,7 +159,14 @@ export default function RoutePlanner() {
               <button
                 type="reset"
                 className="focus:outline-none  cursor-pointer text-[#03008f]  bg-white border-2 border-[#03008f]   rounded-md  outline-none   shadow-md dark:shadow-lg  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]  my-2 w-full md:w-1/2"
-                onClick={() => setStationData({ from: null, to: null })}
+                onClick={() =>
+                  setStationData({
+                    from: null,
+                    to: null,
+                    fromStationCode: null,
+                    toStationCode: null,
+                  })
+                }
               >
                 Reset
               </button>

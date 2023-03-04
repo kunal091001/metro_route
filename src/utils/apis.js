@@ -3,7 +3,8 @@ import axios from "axios";
 const baseURL = "https://backend.delhimetrorail.com/api/v2/en/";
 
 // https://backend.delhimetrorail.com/api/v2/en/station_brief_detail/ATHA
-
+// https://backend.delhimetrorail.com/api/v2/en/new_fare_with_route/BIMR/HCC/minimum-interchange/
+// https://backend.delhimetrorail.com/api/v2/en/new_fare_with_route/BIMR/HCC/least-distance/
 const callback = axios.create({
   baseURL: baseURL,
 });
@@ -47,16 +48,10 @@ const getLineDetails = async (lineCode) => {
   });
 };
 
-const getResultStations = async (
-  fromStationCode,
-  toStationCode,
-  currDateTime
-) => {
+const getResultFair = async (fromCode, toCode) => {
   return new Promise((resolve, reject) => {
     callback
-      .get(
-        `/station_route/${fromStationCode}/${toStationCode}/least-distance/${currDateTime}`
-      )
+      .get(`/new_fare_with_route/${fromCode}/${toCode}/least-distance/`)
       .then((res) => {
         resolve(res.data);
       })
@@ -66,4 +61,4 @@ const getResultStations = async (
   });
 };
 
-export { getLineList, getStationList, getLineDetails, getResultStations };
+export { getLineDetails, getLineList, getResultFair, getStationList };

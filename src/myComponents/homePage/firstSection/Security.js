@@ -3,9 +3,11 @@ import React from "react";
 export default function Security() {
   return (
     <>
-      <a href="https://haryanapolice.gov.in/Citizen_services">Haryana Police</a>
-      <a href="https://propertytheft.delhipolice.gov.in/">Delhi Police</a>
-      <div
+      {/* <a href="https://haryanapolice.gov.in/Citizen_services">Haryana Police</a>
+      <a href="https://propertytheft.delhipolice.gov.in/">Delhi Police</a> */}
+      <div className="text-7xl text-center my-32">Page under Modification</div>
+
+      {/* <div
         className="p-10"
         id="accordion-flush"
         data-accordion="collapse"
@@ -29,9 +31,9 @@ export default function Security() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -231,9 +233,9 @@ export default function Security() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -446,9 +448,9 @@ export default function Security() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -761,9 +763,9 @@ export default function Security() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -775,7 +777,7 @@ export default function Security() {
         >
           <div className="py-5 font-light border-b border-gray-200 dark:border-gray-700">
             <div className="mb-2 text-gray-500 dark:text-gray-400">
-              <table class="table text-center w-full">
+              <table className="table text-center w-full">
                 <tbody>
                   <tr className="border border-collapse">
                     <th className="border border-collapse">Metro Station</th>
@@ -846,9 +848,9 @@ export default function Security() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -862,422 +864,152 @@ export default function Security() {
             <div className="mb-2 text-gray-500 dark:text-gray-400">
               <table className="table w-full  text-center  ">
                 <tbody>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <th
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Metro Station
-                    </th>
-                    <th
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Police Station
-                    </th>
-                    <th
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <th className="border border-collapse">Metro Station</th>
+                    <th className="border border-collapse">Police Station</th>
+                    <th className="border border-collapse">
                       Location of Police Station
                     </th>
-                    <th
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Contact Number
-                    </th>
+                    <th className="border border-collapse">Contact Number</th>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Kirti Nagar
-                    </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="2"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Kirti Nagar</td>
+                    <td className="border border-collapse" rowspan="2">
                       Rajouri Garden Metro
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="2"
-                    >
+                    <td className="border border-collapse" rowspan="2">
                       At Rajouri Garden Metro Station
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="2"
-                    >
+                    <td className="border border-collapse" rowspan="2">
                       011-25150008
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Satguru Ram Singh Marg
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Inderlok
-                    </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Inderlok</td>
+                    <td className="border border-collapse">
                       Netaji Subhash Place Metro
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                    <td className="border border-collapse">
                       At Netaji Subhash Place Metro Station
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      011-27312827
-                    </td>
+                    <td className="border border-collapse">011-27312827</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Ashok Park Main
-                    </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="17"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Ashok Park Main</td>
+                    <td className="border border-collapse" rowspan="17">
                       Nangloi Metro
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="17"
-                    >
+                    <td className="border border-collapse" rowspan="17">
                       At Nangloi Metro Station
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="17"
-                    >
+                    <td className="border border-collapse" rowspan="17">
                       011-25962200
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Punjabi Bagh
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Punjabi Bagh</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Shivaji Park
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Shivaji Park</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Madipur
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Madipur</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Paschim Vihar East
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Paschim Vihar West
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Peeragarhi
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Peeragarhi</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Udyog Nagar
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Udyog Nagar</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Surajmal Stadium
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Surajmal Stadium</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Nangloi
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Nangloi</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Nangloi Railway Station
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Rajdhani Park
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Rajdhani Park</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Mundka
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Mundka</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Mundka Industrial Area
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      GHEWARA
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">GHEWARA</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      TIKRI KALAN
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">TIKRI KALAN</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      TIKRI BORDER
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">TIKRI BORDER</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Pandit Shri Ram Sharma
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="2"
-                    >
+                    <td className="border border-collapse" rowspan="2">
                       Bahadurgarh City
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="2"
-                    >
+                    <td className="border border-collapse" rowspan="2">
                       Bahadurgarh City
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                      rowspan="2"
-                    >
+                    <td className="border border-collapse" rowspan="2">
                       01276-230802
                     </td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Bahadurgarh City
-                    </td>
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Bahadurgarh City</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">
                       Brigagadier Hoshiyar Singh
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                    <td className="border border-collapse">
                       Bahadurgarh Sec-6
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                    <td className="border border-collapse">
                       Bahadurgarh Sec-6
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      01276-242604
-                    </td>
+                    <td className="border border-collapse">01276-242604</td>
                   </tr>
-                  <tr
-                    className="border border-collapse"
-                    className="border-collapse border"
-                  >
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Mundka Depot
-                    </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      Nangloi Metro
-                    </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
+                  <tr className="border border-collapse">
+                    <td className="border border-collapse">Mundka Depot</td>
+                    <td className="border border-collapse">Nangloi Metro</td>
+                    <td className="border border-collapse">
                       At Nangloi Metro Station
                     </td>
-                    <td
-                      className="border border-collapse"
-                      className="border-collapse border"
-                    >
-                      011-25962200
-                    </td>
+                    <td className="border border-collapse">011-25962200</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

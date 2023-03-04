@@ -4,12 +4,21 @@ import MapWindow from "./MapWindow";
 import { useParams } from "react-router-dom";
 import { getResultStations } from "../../../utils/apinew";
 import Animation from "../../lottieAnimations/Animation";
-import Arrows from "../../../Assets/images/arrows.png";
+import { getResultFair } from "../../../utils/apis";
+
 export default function ResultRoute() {
   const { finalStationList, setFinalStationList } = useContext(RouteContext);
   const [loading, setLoading] = useState(true);
   const { paramFinalStationFrom, paramFinalStationTo } = useParams();
-  const [showInterChange, setShowInterChange] = useState(false);
+  const { paramFinalStationFromCode, paramFinalStationToCode } = useParams();
+  const {
+    stationData,
+    setStationData,
+    fare,
+    setFare,
+    finalFare,
+    setFinalFare,
+  } = useContext(RouteContext);
   const date = new Date();
   const totalTimeToDestination = Math.round(finalStationList?.result?.time);
   var counter = 0;
@@ -61,16 +70,31 @@ export default function ResultRoute() {
     getResultStations(paramFinalStationFrom, paramFinalStationTo)
       .then((res) => {
         setFinalStationList(res);
-        setTimeout(() => {
-          setLoading(false);
-        }, 2200);
       })
 
       .catch((error) => {
         setLoading(true);
         console.log(error);
       });
-  }, [paramFinalStationFrom, paramFinalStationTo]);
+
+    getResultFair(paramFinalStationFromCode, paramFinalStationToCode)
+      .then((res) => {
+        setFinalFare(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    setTimeout(() => {
+      setLoading(false);
+    }, 2200);
+  }, [
+    paramFinalStationFrom,
+    paramFinalStationTo,
+    paramFinalStationFromCode,
+    paramFinalStationToCode,
+  ]);
+  console.log(finalFare);
+  setFare(finalFare?.weekday_fare);
 
   return (
     <>
@@ -98,7 +122,7 @@ export default function ResultRoute() {
 
               <div className="h-[32rem] w-full overflow-y-scroll  px-5 pb-5  scrollbar-thumb-gray-200  scrollbar-track-transparent scrollbar-thin  scrollbar-thumb-rounded-2xl relative ">
                 <div className=" focus:outline-none cursor-pointer text-white bg-[#03008f]  rounded-md  outline-none   shadow-md  border-2 border-[#03008f]  font-medium   px-10 py-3 text-center text-lg hover:shadow-xl hover:shadow-[#1f008f38]   my-8 w-full ">
-                  Total Fare 50
+                  Total Fare {fare}
                 </div>
                 <p className="text-4xl text-center font-bold mt-4 mb-8 text-black ">
                   Station List
@@ -110,7 +134,6 @@ export default function ResultRoute() {
                         <div className="absolute w-5 h-5  rounded-full mt-1.5 -left-[0.7rem] border border-white bg-[#03008f] "></div>
                         <div className="text-md font-semibold text-gray-900 border-b-2 border-[#03008f]  ">
                           {checkInterchange(element)}
-                          <i>Click Here for Station Detail</i>
                         </div>
                       </li>
                     );

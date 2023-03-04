@@ -69,16 +69,16 @@ export default function NavBar() {
               <Link to="/">Home</Link>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center   ">
-              <Link to="/lines">Network</Link>
+              <a href="#networkLines">Network</a>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
               <Link to="/security">Security</Link>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
-              <a href="#.">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li className="text-black hover:text-[#00308f] font-bold  text-xl md:text-lg text-center">
-              <a href="#.">FAQ's</a>
+              <Link to="/faqs">FAQ's</Link>
             </li>
             {/* <li>
                 <div>

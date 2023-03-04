@@ -43,30 +43,14 @@ export default function Header() {
           </div>
         </div>
         <div className="hidden justify-between md:flex">
-          <div className="flex mr-5">
+          <div className="flex ml-4 gap-x-2">
+            <div className="mt-1 pr-2  border-r-2 mb-1 ">
+              <a href="/">For Passengers</a>
+            </div>
             <div className="mt-1">
-              <a href="#." className="p-1">
-                हिंदी
+              <a href="https://www.delhimetrorail.com/corporate">
+                For Corporates
               </a>
-            </div>
-            <div>
-              <strong className="mt-1">|</strong>
-            </div>
-            <div className="mt-1">
-              <a href="#." className="p-1">
-                English
-              </a>
-            </div>
-          </div>
-          <div className="flex ml-4  ">
-            <div className="mt-1 ">
-              <a href="#.">For Passengers</a>
-            </div>
-            <div>
-              <strong className="p-1">|</strong>
-            </div>
-            <div className="mt-1">
-              <a href="#.">For Corporates</a>
             </div>
           </div>
         </div>

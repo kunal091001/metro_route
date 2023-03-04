@@ -3,8 +3,7 @@ import ListCounter from "./ListCounter";
 import MapSection from "./MapSection";
 import RoutePlanner from "./RoutePlanner";
 import Lines from "./Lines";
-import ExtraEle from "./ExtraEle";
-import LineDetails from "./LineDetails";
+
 import RouteContext from "../../Contexts/RouteContext";
 import { getLineList } from "../../../utils/apis";
 export default function Firstpage() {
@@ -33,15 +32,11 @@ export default function Firstpage() {
           <div className="mx-auto ">
             <MapSection />
           </div>
-          {/* <div> */}
+
           <RoutePlanner />
-          {/* </div> */}
         </div>
-        <div className="my-32 sm:my-36">
+        <div id="networkLines" className="my-32 py-8 sm:my-36">
           <Lines />
-        </div>
-        <div className=" my-32 sm:my-36">
-          <ExtraEle />
         </div>
       </div>
     </>

@@ -3,8 +3,8 @@ import mapImage from "../../../Assets/images/MetroMap.jpg";
 
 export default function MapWindow({
   src = mapImage,
-  magnifierHeight = 200,
-  magnifieWidth = 200,
+  magnifierHeight = 225,
+  magnifieWidth = 225,
   zoomLevel = 3,
 }) {
   const [[x, y], setXY] = useState([0, 0]);
@@ -12,7 +12,7 @@ export default function MapWindow({
   const [showMagnifier, setShowMagnifier] = useState(false);
 
   return (
-    <div className="bg-[#fff] rounded-2xl  shadow-2xl h-fit m-4">
+    <div className="bg-[#fff] rounded-2xl  shadow-2xl h-fit mx-4 my-16">
       <h1 className="sm:text-5xl text-2xl text-black text-center font-bold py-2">
         METRO MAP
       </h1>

@@ -11,6 +11,15 @@ const RouteStates = (props) => {
   const [lineDetails, setLineDetails] = useState([]);
   const [lineCode, setLineCode] = useState("");
   const [finalStationList, setFinalStationList] = useState(null);
+  const [fare, setFare] = useState(null);
+  const [finalFare, setFinalFare] = useState(null);
+  const [stationData, setStationData] = useState({
+    stationStatus: "",
+    from: null,
+    to: null,
+    fromStationCode: null,
+    toStationCode: null,
+  });
 
   return (
     <RouteContext.Provider
@@ -25,6 +34,12 @@ const RouteStates = (props) => {
         setLineDetails,
         finalStationList,
         setFinalStationList,
+        stationData,
+        setStationData,
+        fare,
+        setFare,
+        finalFare,
+        setFinalFare,
       }}
     >
       {props.children}
